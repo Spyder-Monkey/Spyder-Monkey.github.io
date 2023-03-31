@@ -9,9 +9,11 @@
 
         <!-- STYLESHEETS -->
         <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/rwd.css">
         <link rel="stylesheet" href="style/navbar.css">
         <link rel="stylesheet" href="style/projects.css">
         <link rel="stylesheet" href="style/contact.css">
+        <link rel="stylesheet" href="style/about.css">
     </head>
 
     <body>
@@ -42,76 +44,108 @@
         </div>
 
         <!-- About -->
-        
-        <!-- <div id="About" class="container">
-
-        </div> -->
-
-        <!-- Work/Projects -->
-        <div id="work" class="container">
-            <div class="container-heading">
-                <h2>My Projects</h2>
+        <div class="row" id="About">
+            <div class="col-6" style="background:cyan;">
+                <p>The name's</p>
+                <h2 id="my-name">Trevor Bender</h2>
+                <p id="title">Software Developer</p>
             </div>
+            <!-- Skills -->
+            <div class="col-6" id="skills">
+
+            </div>
+        </div>
+        <!-- About description and profile image -->
+        <div class="row" style="background:red;">
+            <!-- Description -->
+            <div class="col-8" style="background:purple;">
+
+            </div>
+            <!-- Profile Picture -->
+            <div class="col-4" id="profile-image">
+
+            </div>
+        </div>
+
+        <!-- Work/Projects heading -->
+        <div class="row" id="work">
+            <div class="col-12">
+                <h2>Projects</h2>
+            </div>
+        </div>
+        <!-- Work/Projects content -->
+        <div class="row">
             <!-- Autodex -->
-            <div class="project-card">
-                <div class="project-card-inner">
-                    <div class="project-card-front">
-                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Project Image" style="width:100%;">
-                        <div class="project-info">
-                            <h3><b>Autodex</b></h3>
-                            <p>Python</p>
+            <div class="col-4">
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="autodex_logo.png" alt="Project Image" style="width:100%;">
+                            <div class="project-info">
+                                <h3><b>Autodex</b></h3>
+                                <i class="fa-brands fa-python language-icon"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card-back">
-                        <h1>Autodex</h1>
-                        <a href="https://github.com/Spyder-Monkey/Autodex" class="project-link" target="_blank">GitHub Repository</a>
-                        <p>Description</p>
+                        <div class="project-card-back">
+                            <h1>Autodex</h1>
+                            <a href="https://github.com/Spyder-Monkey/Autodex" class="project-link" target="_blank">GitHub Repository</a>
+                            <p>Description</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- UML Class Editor -->
-            <div class="project-card">
-                <div class="project-card-inner">
-                    <div class="project-card-front">
-                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Project Image" style="width:100%;">
-                        <div class="project-info">
-                            <h3><b>UML Class Editor</b></h3>
-                            <p>Python</p>
+            <div class="col-4">
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Project Image" style="width:100%;">
+                            <div class="project-info">
+                                <h3><b>UML Class Editor</b></h3>
+                                <i class="fa-brands fa-python language-icon"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card-back">
-                        <h1>UML Class Editor</h1>
-                        <a href="https://github.com/mucsci-students/2022fa-420-LigmaPy" target="_blank" class="project-link">GitHub Repository</a>
-                        <p>Description</p>
+                        <div class="project-card-back">
+                            <h1>UML Class Editor</h1>
+                            <a href="https://github.com/mucsci-students/2022fa-420-LigmaPy" target="_blank" class="project-link">GitHub Repository</a>
+                            <p>Description</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Arch Tower Defense -->
-            <div class="project-card">
-                <div class="project-card-inner">
-                    <div class="project-card-front">
-                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Project Image" style="width:100%;">
-                        <div class="project-info">
-                            <h3><b>Arch Tower Defense</b></h3>
-                            <p>Unity/C#</p>
+            <div class="col-4">
+                <div class="project-card">
+                    <div class="project-card-inner">
+                        <div class="project-card-front">
+                            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Project Image" style="width:100%;">
+                            <div class="project-info">
+                                <h3><b>Arch Tower Defense</b></h3>
+                                <i class="fa-brands fa-unity language-icon"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-card-back">
-                        <h1>Arch Tower Defense</h1>
-                        <a href="https://github.com/mucsci-students/2022fa-475-ArchTowerDefense" class="project-link" target="_blank">GitHub Repository</a>
-                        <p>Description</p>
+                        <div class="project-card-back">
+                            <h1>Arch Tower Defense</h1>
+                            <a href="https://github.com/mucsci-students/2022fa-475-ArchTowerDefense" class="project-link" target="_blank">GitHub Repository</a>
+                            <p>Description</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Contact -->
-        <div id="contact" class="container">
-            <div class="container-heading">
+        <!-- Contact Heading -->
+        <div class="row">
+            <div class="col-12">
                 <h2>Contact</h2>
-
             </div>
-            <div class="contact-form">
+        </div>
+        <!-- Contact content -->
+        <div class="row">
+            <!-- spacer -->
+            <div class="col-3"></div>
+
+            <div class="col-6">
                 <form id="contact-form-id" name="contact-form">
                     <input type="text" id="name" name="name" placeholder="Name" required>
                     <input type="email" name="email" id="email" placeholder="Email" required>
@@ -121,6 +155,8 @@
                     <input type="submit" name="contact-submit" value="Submit">
                 </form>
             </div>
+            <!-- spacer -->
+            <div class="col-3"></div>
         </div>
     </body>
 </html>

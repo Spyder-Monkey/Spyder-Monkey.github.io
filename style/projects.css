@@ -1,9 +1,7 @@
 .project-card {
     background: transparent;
-    width: 30%;
     height: 550px;
     perspective: 1000px;
-    margin: 115px 25px auto;
 }
 
 .project-card-inner {
@@ -31,6 +29,10 @@
 .project-card-front {
     background: #414141;
     color: #ccc;
+}
+
+.language-icon {
+    font-size: 26px;
 }
 
 .project-card-back {

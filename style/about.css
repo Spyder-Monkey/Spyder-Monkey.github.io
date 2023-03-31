@@ -1,0 +1,36 @@
+#my-name {
+    font-size: 72px;
+    color: #fdd439;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: -40px;
+}
+
+#About p {
+    color: #ccc;
+    font-size: 36px;
+}
+
+#title {
+    float: right;
+    width: auto;
+    margin-top: -60px;
+    margin-right: 60px;
+}
+
+#skills {
+    /* position: relative; */
+    /* width: calc((100vw - 7%)/2); */
+    height: 267px;
+    background: yellow;
+    /* margin-left: calc((100vw - 7%)/2); */
+}
+
+#profile-image {
+    /* position: relative; */
+    /* margin-top: calc(100vh - 325px); */
+    /* margin-left: calc(90vw - 300px); */
+    /* width: 300px; */
+    height: 300px;
+    background: green;
+}
