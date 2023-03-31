@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Trevor Bender</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/58ffad5e40.js" crossorigin="anonymous"></script>
+
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/navbar.css">
+        <link rel="stylesheet" href="style/projects.css">
+        <link rel="stylesheet" href="style/contact.css">
+    </head>
+
+    <body>
+        <div class="navbar">
+            <div class="nav-container">
+                <nav role="navigation" class="nav-wrapper">
+                    <a href="#" id="About" class="nav-link mobile">About</a>
+                    <a href="#work" id="Work" class="nav-link mobile">Projects</a>
+                    <a href="#contact" id="Contact" class="nav-link mobile">Contact</a>
+                    <a href="TrevorBenderResume.pdf" id="Resume" class="nav-link mobile" target="_blank" download>Resume</a>
+                    <!-- Social Media Icons -->
+                    <div class="social-icons">
+                        <!-- GitHub -->
+                        <a href="https://github.com/Spyder-Monkey" target="_blank">
+                            <i class="fa-brands fa-square-github"></i>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/trevor-bender-69870a19b/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <!-- Email -->
+                        <a href="#contact">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- About -->
+        
+        <!-- <div id="About" class="container">
+
+        </div> -->
+
+        <!-- Work/Projects -->
+        <div id="work" class="container">
+            <div class="container-heading">
+                <h2>My Projects</h2>
+            </div>
+            <!-- Autodex -->
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Project Image" style="width:100%;">
+                        <div class="project-info">
+                            <h3><b>Autodex</b></h3>
+                            <p>Python</p>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <h1>Autodex</h1>
+                        <a href="https://github.com/Spyder-Monkey/Autodex" class="project-link" target="_blank">GitHub Repository</a>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <!-- UML Class Editor -->
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Project Image" style="width:100%;">
+                        <div class="project-info">
+                            <h3><b>UML Class Editor</b></h3>
+                            <p>Python</p>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <h1>UML Class Editor</h1>
+                        <a href="https://github.com/mucsci-students/2022fa-420-LigmaPy" target="_blank" class="project-link">GitHub Repository</a>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Arch Tower Defense -->
+            <div class="project-card">
+                <div class="project-card-inner">
+                    <div class="project-card-front">
+                        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Project Image" style="width:100%;">
+                        <div class="project-info">
+                            <h3><b>Arch Tower Defense</b></h3>
+                            <p>Unity/C#</p>
+                        </div>
+                    </div>
+                    <div class="project-card-back">
+                        <h1>Arch Tower Defense</h1>
+                        <a href="https://github.com/mucsci-students/2022fa-475-ArchTowerDefense" class="project-link" target="_blank">GitHub Repository</a>
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact" class="container">
+            <div class="container-heading">
+                <h2>Contact</h2>
+
+            </div>
+            <div class="contact-form">
+                <form id="contact-form-id" name="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+
+                    <textarea name="subject" id="subject" placeholder="Your message" style="height:150px;"></textarea>
+
+                    <input type="submit" name="contact-submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

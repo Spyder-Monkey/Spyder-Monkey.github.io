@@ -1,0 +1,122 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    z-index: 50;
+    display: flex;
+    width: 7%;
+    height: 105vh;
+    padding-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    border-color: transparent;
+    background: #fdd439;
+}
+
+.nav-container {
+    display: block;
+    height: 100vh;
+    max-width: 90px;
+}
+
+.nav-wrapper{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+    background: #fdd439;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+    text-align: left;
+    color: #333;
+}
+
+nav a.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+nav a.nav-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: calc(100% - 5px);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background: #333;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link {
+    position: relative;
+    -webkit-box-align: center;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+}
+
+.nav-link.mobile {
+    display: block;
+    margin: 0;
+    padding: 8px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    align-self: center;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.social-icons {
+    position: relative;
+    left: 0;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.social-icons i {
+    position: relative;
+    padding: 8px;
+    font-size: 36px;
+}
