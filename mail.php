@@ -6,15 +6,15 @@
     $to = "tbends@trevorbender.com";
     $subject = "New email from portfolio site";
     $txt = "Name: ". $name . "\r\nEmail: " . $email . "\r\nMessage: " . $message;
-    $headers = "From: noreply@trevorbender.com";
+    $headers = "From: {$email}";
 
     if($email!=NULL) {
         if(mail($to, $subject, $txt, $headers)) {
-            echo "mail sent.";
+            echo "<p>mail sent.</p>";
             header("Location:index.html");
         }
         else {
-            echo "failed";
+            echo "<p>failed</p>";
         }
     }
 ?>
