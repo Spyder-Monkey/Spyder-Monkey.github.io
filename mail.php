@@ -11,6 +11,7 @@
     if($email!=NULL) {
         if(mail($to, $subject, $txt, $headers)) {
             echo "mail sent.";
+            header("Location:index.html");
         }
         else {
             echo "failed";
