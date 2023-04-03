@@ -20,6 +20,25 @@
     background: #fdd439;
 }
 
+.hamburger {
+    font-size: 36px;
+    color: #ccc;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        position: fixed;
+        z-index: 9999;
+        padding: 15px;
+    }
+}
+
 .nav-container {
     display: block;
     height: 100vh;

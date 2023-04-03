@@ -1,6 +1,6 @@
 .row {
     background: #2c2c2c;
-    margin-left: 7%;
+    margin-left: 0;
 }
 
 .row::after {
@@ -20,6 +20,7 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .row {margin-left: 7%;}
     .col-1 {width:8.33%;}
     .col-2 {width:16.66%;}
     .col-3 {width:25%;}
