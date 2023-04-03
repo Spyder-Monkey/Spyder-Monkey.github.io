@@ -1,6 +1,6 @@
 .project-card {
     background: transparent;
-    height: 550px;
+    height: 650px;
     perspective: 1000px;
 }
 
@@ -44,7 +44,6 @@
 
 .project-info {
     padding: 2px 16px;
-    background: #414141;
 }
 
 .project-link {
