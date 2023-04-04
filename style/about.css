@@ -33,6 +33,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    #heading {
+        text-align: center;
+    }
     #my-name {
         font-size: 36px;
         margin-top: -20px;
@@ -41,11 +44,15 @@
     #About p {
         font-size: 18px;
         margin-top: 40px;
-    }
+        margin-left: -200px;
+   }
 
     p#title {
         margin-top: -30px;
-        margin-right: 250px;
+        margin-right: 125px;
     }
 
+    #heading {
+        text-align: center;
+    }
 }
