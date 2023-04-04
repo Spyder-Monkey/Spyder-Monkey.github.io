@@ -1,9 +1,7 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-wrapper");
+function openNav() {
+    document.getElementById("mobileNav").style.width = "100%";
+}
 
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+function closeNav() {
+    document.getElementById("mobileNav").style.width = "0%";
 }

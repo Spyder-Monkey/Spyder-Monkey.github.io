@@ -26,9 +26,9 @@
         <div id="mobileNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-                <a href="#">About</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#About">About</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Contact">Contact</a>
                 <a href="TrevorBenderResume.pdf" target="_blank" download>Resume</a>
             </div>
         </div>
@@ -36,9 +36,9 @@
         <div class="navbar">
             <div class="nav-container">
                 <nav role="navigation" class="nav-wrapper">
-                    <a href="#" id="About" class="nav-link mobile">About</a>
-                    <a href="#work" id="Work" class="nav-link mobile">Projects</a>
-                    <a href="#contact" id="Contact" class="nav-link mobile">Contact</a>
+                    <a href="#About" id="About" class="nav-link mobile">About</a>
+                    <a href="#Projects" id="Work" class="nav-link mobile">Projects</a>
+                    <a href="#Contact" id="Contact" class="nav-link mobile">Contact</a>
                     <a href="TrevorBenderResume.pdf" id="Resume" class="nav-link mobile" target="_blank" download>Resume</a>
                     <!-- Social Media Icons -->
                     <div class="social-icons">
@@ -51,7 +51,7 @@
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
                         <!-- Email -->
-                        <a href="#contact">
+                        <a href="#Contact">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
                     </div>
@@ -103,7 +103,7 @@
         </div>
 
         <!-- Work/Projects heading -->
-        <div class="row" id="work">
+        <div class="row" id="Projects">
             <div class="col-12">
                 <h2>Projects</h2>
             </div>
@@ -170,7 +170,7 @@
         </div>
 
         <!-- Contact Heading -->
-        <div class="row">
+        <div id="Contact" class="row">
             <div class="col-12">
                 <h2>Contact</h2>
             </div>
@@ -193,15 +193,5 @@
             <!-- spacer -->
             <div class="col-3"></div>
         </div>
-
-        <script>
-            function openNav() {
-                document.getElementById("mobileNav").style.width = "100%";
-            }
-
-            function closeNav() {
-                document.getElementById("mobileNav").style.width = "0%";
-            }
-        </script>
     </body>
 </html>
