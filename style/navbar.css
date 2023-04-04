@@ -7,6 +7,7 @@
     z-index: 50;
     display: flex;
     width: 7%;
+    /* max-width: 90px; */
     height: 105vh;
     padding-bottom: 0;
     -webkit-box-orient: vertical;
@@ -21,9 +22,17 @@
 }
 
 .hamburger {
-    font-size: 36px;
-    color: #ccc;
     display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #ccc;
 }
 
 @media screen and (max-width: 768px) {
@@ -31,17 +40,52 @@
         display: none;
     }
 
-    .hamburger {
-        display: flex;
+    .nav-wrapper {
         position: fixed;
-        z-index: 9999;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-wrapper.active {
+        left: 0;
+    }
+
+    .nav-link {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        z-index: 1;
         padding: 15px;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45px);
+    }
+
+    .overlay a {
+        font-size: 36px;
     }
 }
 
 .nav-container {
     display: block;
-    height: 100vh;
+    height: 105vh;
     max-width: 90px;
 }
 
@@ -57,7 +101,8 @@
     margin-right: auto;
     margin-left: auto;
     padding-top: 40px;
-    background: #fdd439;
+    /* background: #fdd439; */
+    background: transparent;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
@@ -138,4 +183,52 @@ nav a.nav-link::before {
     position: relative;
     padding: 8px;
     font-size: 36px;
+}
+
+/* NAV OVERLAY */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content a:hover {
+    text-decoration: underline;
+}
+
+.overlay a:first-child:hover {
+    color: #999;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+    font-weight: 300;
+    text-transform: uppercase;
 }

@@ -14,12 +14,25 @@
         <link rel="stylesheet" href="style/projects.css">
         <link rel="stylesheet" href="style/contact.css">
         <link rel="stylesheet" href="style/about.css">
+        <!-- SCRIPTS -->
+        <script src="scripts/navScript.js"></script>
     </head>
 
     <body>
         <div class="hamburger">
-            <i class="fa-sharp fa-solid fa-bars"></i>
+            <span style="font-size:30px;cursor:pointer;color:#ccc;" onclick="openNav()">&#9776;</span>
         </div>
+
+        <div id="mobileNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+                <a href="TrevorBenderResume.pdf" target="_blank" download>Resume</a>
+            </div>
+        </div>
+
         <div class="navbar">
             <div class="nav-container">
                 <nav role="navigation" class="nav-wrapper">
@@ -180,5 +193,15 @@
             <!-- spacer -->
             <div class="col-3"></div>
         </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mobileNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("mobileNav").style.width = "0%";
+            }
+        </script>
     </body>
 </html>
