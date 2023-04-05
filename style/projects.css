@@ -1,6 +1,7 @@
 .project-card {
     background: transparent;
-    height: 650px;
+    /* height: 650px; */
+    height: 550px;
     perspective: 1000px;
 }
 
@@ -43,7 +44,8 @@
 }
 
 .project-info {
-    padding: 2px 16px;
+    padding: 0 8px;
+    margin-top: -10px;
 }
 
 .project-link {

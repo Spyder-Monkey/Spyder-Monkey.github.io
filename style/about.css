@@ -3,7 +3,8 @@
     color: #fdd439;
     text-transform: uppercase;
     font-weight: 300;
-    margin-top: -40px;
+    margin-top: -70px;
+    text-align: center;
 }
 
 #About p {
@@ -12,17 +13,9 @@
 }
 
 #title {
-    float: right;
+    text-align: right;
     width: auto;
-    margin-top: -60px;
-    margin-right: 60px;
-}
-
-#skills {height: 267px;}
-
-#skills i {
-    font-size: 36px;
-    color: #ccc;
+    margin-top: -90px;
 }
 
 #profile-image {
@@ -30,32 +23,24 @@
     background: green;
 }
 
+#heading .row {
+    margin-left: 0;
+}
+
 /* Tablets */
 @media screen and (max-width: 768px) {
-    #heading {
-        text-align: center;
-    }
     #my-name {
         font-size: 36px;
-        margin-top: -20px;
+        margin-top: -70px;
     }
     
     #About p {
         font-size: 18px;
         margin-top: 40px;
-        margin-left: -200px;
+        margin-left: 15px;
    }
 
     p#title {
-        margin-top: -30px;
-        margin-right: 190px;
+        margin-top: -90px;
     }
-
-    #heading {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    p#title {margin-right: 50px;}
 }
