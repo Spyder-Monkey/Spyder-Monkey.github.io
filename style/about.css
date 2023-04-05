@@ -18,9 +18,7 @@
     margin-right: 60px;
 }
 
-#skills {
-    height: 267px;
-}
+#skills {height: 267px;}
 
 #skills i {
     font-size: 36px;
@@ -31,6 +29,8 @@
     height: 300px;
     background: green;
 }
+
+#heading {background: red;}
 
 /* Tablets */
 @media screen and (max-width: 768px) {
@@ -50,7 +50,7 @@
 
     p#title {
         margin-top: -30px;
-        margin-right: 125px;
+        margin-right: 190px;
     }
 
     #heading {
@@ -59,7 +59,5 @@
 }
 
 @media screen and (max-width: 600px) {
-    p#title {
-        margin-right: 50px;
-    }
+    p#title {margin-right: 50px;}
 }

@@ -7,7 +7,6 @@
     z-index: 50;
     display: flex;
     width: 7%;
-    /* max-width: 90px; */
     height: 105vh;
     padding-bottom: 0;
     -webkit-box-orient: vertical;
@@ -21,9 +20,7 @@
     background: #fdd439;
 }
 
-.hamburger {
-    display: none;
-}
+.hamburger {display: none;}
 
 .bar {
     display: block;
@@ -36,9 +33,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .navbar {
-        display: none;
-    }
+    .navbar {display: none;}
 
     .nav-wrapper {
         position: fixed;
@@ -50,13 +45,9 @@
         transition: 0.3s;
     }
 
-    .nav-wrapper.active {
-        left: 0;
-    }
+    .nav-wrapper.active {left: 0;}
 
-    .nav-link {
-        margin: 2.5rem 0;
-    }
+    .nav-link {margin: 2.5rem 0;}
 
     .hamburger {
         display: block;
@@ -66,21 +57,13 @@
         cursor: pointer;
     }
 
-    .hamburger.active .bar:nth-child(1) {
-        opacity: 0;
-    }
+    .hamburger.active .bar:nth-child(1) {opacity: 0;}
 
-    .hamburger.active .bar:nth-child(2) {
-        transform: translateY(8px) rotate(45deg);
-    }
+    .hamburger.active .bar:nth-child(2) {transform: translateY(8px) rotate(45deg);}
 
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45px);
-    }
+    .hamburger.active .bar:nth-child(3) {transform: translateY(-8px) rotate(-45px);}
 
-    .overlay a {
-        font-size: 36px;
-    }
+    .overlay a {font-size: 36px;}
 }
 
 .nav-container {
@@ -101,7 +84,6 @@
     margin-right: auto;
     margin-left: auto;
     padding-top: 40px;
-    /* background: #fdd439; */
     background: transparent;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -122,9 +104,7 @@ nav a {
     color: #333;
 }
 
-nav a.nav-link:hover::before {
-    transform: scaleX(1);
-}
+nav a.nav-link:hover::before {transform: scaleX(1);}
 
 nav a.nav-link::before {
     content: "";
@@ -199,19 +179,16 @@ nav a.nav-link::before {
     transition: 0.5s;
 }
 
-.overlay-content a:hover {
-    text-decoration: underline;
-}
+.overlay-content a:hover {text-decoration: underline;}
 
-.overlay a:nth-child(1):hover {
-    color: #999;
-}
+.overlay a:nth-child(1):hover {color: #999;}
 
 .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
+    color: #ccc;
 }
 
 .overlay-content {
