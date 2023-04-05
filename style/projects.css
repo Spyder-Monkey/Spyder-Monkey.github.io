@@ -1,6 +1,5 @@
 .project-card {
     background: transparent;
-    /* height: 650px; */
     height: 550px;
     perspective: 1000px;
 }
@@ -15,9 +14,7 @@
     flex-direction: column;
 }
 
-.project-card:hover .project-card-inner {
-    transform: rotateY(180deg);
-}
+.project-card:hover .project-card-inner {transform: rotateY(180deg);}
 
 .project-card-front, .project-card-back {
     position: absolute;
@@ -32,9 +29,7 @@
     color: #ccc;
 }
 
-.language-icon {
-    font-size: 26px;
-}
+.language-icon {font-size: 26px;}
 
 .project-card-back {
     background:#fdd439;

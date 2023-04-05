@@ -11,9 +11,7 @@ input, textarea {
     color: #ccc;
 }
 
-input::placeholder, textarea::placeholder {
-    color: #ccc;
-}
+input::placeholder, textarea::placeholder {color: #ccc;}
 
 input[type=text], input[type=email], textarea {
     width: 100%;
@@ -25,13 +23,9 @@ input[type=text], input[type=email], textarea {
     resize: vertical;
 }
 
-textarea {
-    min-height: 150px;
-}
+textarea {min-height: 150px;}
 
-input[type=text]:focus, input[type=email]:focus, textarea:focus {
-    outline: 2px solid #fdd439;
-}
+input[type=text]:focus, input[type=email]:focus, textarea:focus {outline: 2px solid #fdd439;}
 
 input[type=submit] {
     border: none;
