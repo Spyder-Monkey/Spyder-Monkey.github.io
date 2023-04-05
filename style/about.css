@@ -32,6 +32,7 @@
     background: green;
 }
 
+/* Tablets */
 @media screen and (max-width: 768px) {
     #heading {
         text-align: center;
@@ -54,5 +55,11 @@
 
     #heading {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    p#title {
+        margin-right: 0px;
     }
 }
