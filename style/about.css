@@ -35,7 +35,6 @@
 /* Tablets */
 @media screen and (max-width: 768px) {
     #heading {
-        background: blue;
         text-align: center;
     }
     #my-name {
@@ -60,11 +59,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    #heading {
-        background: red;
-    }
-
     p#title {
-        margin-right: 0px;
+        margin-right: 50px;
     }
 }
