@@ -30,8 +30,6 @@
     background: green;
 }
 
-#heading {background: red;}
-
 /* Tablets */
 @media screen and (max-width: 768px) {
     #heading {
