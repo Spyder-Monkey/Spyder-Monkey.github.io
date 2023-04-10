@@ -29,7 +29,9 @@
     color: #ccc;
 }
 
-.language-icon {font-size: 26px;}
+.language-icon {
+    font-size: 26px;
+}
 
 .project-card-back {
     background:#fdd439;
@@ -39,8 +41,11 @@
 }
 
 .project-info {
-    padding: 0 8px;
-    margin-top: -10px;
+    position: absolute;
+    width: 100%;
+    padding: 0 8px 8px 8px;
+    margin-top: 0;
+    bottom: 0;
 }
 
 .project-link {
