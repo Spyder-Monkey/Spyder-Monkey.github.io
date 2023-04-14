@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Trevor Bender</title>
+        <title>Trevor Bender | Software Developer</title>
+        <!-- META -->
         <meta charset="utf-8">
+        <meta name="author" content="Trevor Bender">
+        <meta name="description" content="Trevor Bender portfolio website">
+        <meta name="keywords" content="Trevor Bender, Software Developer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/58ffad5e40.js" crossorigin="anonymous"></script>
@@ -14,6 +18,7 @@
         <link rel="stylesheet" href="style/projects.css">
         <link rel="stylesheet" href="style/contact.css">
         <link rel="stylesheet" href="style/about.css">
+        <link rel="stylesheet" href="style/skills.css">
         <!-- SCRIPTS -->
         <script src="scripts/navScript.js"></script>
     </head>
@@ -28,6 +33,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
                 <a href="#About">About</a>
+                <a href="#Skills">Skills</a>
                 <a href="#Projects">Projects</a>
                 <a href="#Contact">Contact</a>
                 <a href="Trevor_Resume.pdf" target="_blank" download>Resume</a>
@@ -38,6 +44,7 @@
             <div class="nav-container">
                 <nav role="navigation" class="nav-wrapper">
                     <a href="#About" class="nav-link mobile">About</a>
+                    <a href="#Skills" class="nav-link mobile">Skills</a>
                     <a href="#Projects" class="nav-link mobile">Projects</a>
                     <a href="#Contact" class="nav-link mobile">Contact</a>
                     <a href="Trevor_Resume.pdf" id="Resume" class="nav-link mobile" target="_blank" download>Resume</a>
@@ -83,7 +90,64 @@
                 </div>
             </section>
         </section>
+        <!-- End About Section -->
 
+        <!-- Skills Heading -->
+        <section class="row" id="Skills">
+            <section class="col-12">
+                <h2>Skills</h2>
+            </section>
+        </section>
+        <!-- Skills Content -->
+        <section class="row">
+            <section class="col-12" style="background:red;">
+                <section class="row skill-row" style="background:purple;">
+                    <!-- Python -->
+                    <section class="col-4" style="height: 200px;background:cyan;">
+                        <p>Python</p>
+                    </section>
+                    <!-- Java -->
+                    <section class="col-4" style="height:200px;background:blue;">
+                        <p>Java</p>
+                    </section>
+                    <!-- PSQL -->
+                    <section class="col-4" style="height:200px;background:magenta;">
+                        <p>PSQL</p>
+                    </section>
+                </section>
+
+                <section class="row skill-row" style="background:blue;">
+                    <!-- GIT -->
+                    <section class="col-4" style="height:200px;background:green;">
+                        <p>GIT</p>
+                    </section>
+                    <!-- VSCode -->
+                    <section class="col-4" style="height:200px;background:maroon;">
+                        <p>VSCode</p>
+                    </section>
+                    <!-- AGILE -->
+                    <section class="col-4" style="height:200px;background:yellowgreen;">
+                        <p>AGILE</p>
+                    </section>
+                </section>
+
+                <section class="row skill-row" style="background:yellow;">
+                    <!-- Linux -->
+                    <section class="col-4" style="height:200px;background:teal;">
+                        <p>Linux</p>
+                    </section>
+                    <!-- HTML/CSS -->
+                    <section class="col-4" style="height:200px;background:salmon;">
+                        <p>HTML/CSS</p>
+                    </section>
+                    <!-- GDB -->
+                    <section class="col-4" style="height:200px;background:slateblue;">
+                        <p>GDB</p>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- End Skills Section -->
         <!-- Work/Projects heading -->
         <section class="row" id="Projects">
             <div class="col-12">
