@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Trevor Bender</title>
+        <title>Trevor Bender | Software Developer</title>
+        <!-- META -->
         <meta charset="utf-8">
+        <meta name="author" content="Trevor Bender">
+        <meta name="description" content="Trevor Bender portfolio website">
+        <meta name="keywords" content="Trevor Bender, Software Developer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/58ffad5e40.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
 
         <!-- STYLESHEETS -->
         <link rel="stylesheet" href="style/main.css">
@@ -14,6 +21,7 @@
         <link rel="stylesheet" href="style/projects.css">
         <link rel="stylesheet" href="style/contact.css">
         <link rel="stylesheet" href="style/about.css">
+        <link rel="stylesheet" href="style/skills.css">
         <!-- SCRIPTS -->
         <script src="scripts/navScript.js"></script>
     </head>
@@ -28,6 +36,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
                 <a href="#About">About</a>
+                <a href="#Skills">Skills</a>
                 <a href="#Projects">Projects</a>
                 <a href="#Contact">Contact</a>
                 <a href="Trevor_Resume.pdf" target="_blank" download>Resume</a>
@@ -38,6 +47,7 @@
             <div class="nav-container">
                 <nav role="navigation" class="nav-wrapper">
                     <a href="#About" class="nav-link mobile">About</a>
+                    <a href="#Skills" class="nav-link mobile">Skills</a>
                     <a href="#Projects" class="nav-link mobile">Projects</a>
                     <a href="#Contact" class="nav-link mobile">Contact</a>
                     <a href="Trevor_Resume.pdf" id="Resume" class="nav-link mobile" target="_blank" download>Resume</a>
@@ -49,7 +59,7 @@
                         </a>
                         <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/in/trevor-bender-69870a19b/" target="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="devicon-linkedin-plain"></i>
                         </a>
                         <!-- Email -->
                         <a href="#Contact">
@@ -62,8 +72,8 @@
         <!-- End Navbar section -->
 
         <!-- About -->
-        <div class="row" id="About">
-            <div id="heading" class="col-6">
+        <section class="row" id="About">
+            <section id="heading" class="col-6">
                 <div class="row">
                     <div class="col-5">
                         <p style="text-align:left;">The name's</p>
@@ -81,26 +91,173 @@
                         <p id="title">Software Developer</p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </section>
+        <!-- End About Section -->
 
+        <!-- Skills Heading -->
+        <section class="row" id="Skills">
+            <section class="col-12">
+                <h2>Skills</h2>
+            </section>
+        </section>
+        <!-- Skills Content -->
+        <section class="row">
+            <section class="col-12">
+                <section class="row skill-row">
+                    <!-- Python -->
+                    <section class="col-4">
+                        <section class="skill-card">
+                            <section class="skill-card-inner">
+                                <section class="skill-header">
+                                    <p class="skill-label">Python</p>
+                                    <i class="devicon-python-plain skill"></i>
+                                </section>
+                                <section class="skill-description">
+                                    <p>Data analysis, Web scraping, Automation</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <!-- Java -->
+                    <section class="col-4">
+                        <section class="skill-card">
+                            <section class="skill-card-inner">
+                                <section class="skill-header">
+                                    <p class="skill-label">Java</p>
+                                    <i class="devicon-java-plain skill"></i>
+                                </section>
+                                <section class="skill-description">
+                                    <p>Object oriented programming</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <!-- PSQL -->
+                    <section class="col-4">
+                        <section class="skill-card">
+                            <section class="skill-card-inner">
+                                <section class="skill-header">
+                                    <p class="skill-label">PostgreSQL</p>
+                                    <i class="devicon-postgresql-plain skill"></i>
+                                </section>
+                                <section class="skill-description">
+                                    <p>Storage of relational data</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="row skill-row">
+                    <!-- GIT -->
+                    <section class="col-4">
+                        <section class="skill-card">
+                            <section class="skill-card-inner">
+                                <section class="skill-header">
+                                    <p class="skill-label">Git</p>
+                                    <i class="devicon-git-plain skill"></i>
+                                </section>
+                                <section class="skill-description">
+                                    <p>Version control, collaboration, branch workflow</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <!-- C/C++ -->
+                    <section class="col-4">
+                        <section class="skill-card">
+                            <section class="skill-card-inner">
+                                <section class="skill-header">
+                                    <p class="skill-label">C++</p>
+                                    <i class="devicon-cplusplus-plain skill"></i>
+                                </section>
+                                <section class="skill-description">
+                                    <p>Operating system manipulation</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <!-- JavaScript -->
+                    <section class="col-4">
+                        <section class="skill-card">
+                            <section class="skill-card-inner">
+                                <section class="skill-header">
+                                    <p class="skill-label">JavaScript</p>
+                                    <i class="devicon-javascript-plain skill"></i>
+                                </section>
+                                <section class="skill-description">
+                                    <p>Creating dynamic webpages</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="row skill-row">
+                    <!-- Linux -->
+                    <section class="col-4">
+                        <section class="skill-card">
+                            <section class="skill-card-inner">
+                                <section class="skill-header">
+                                    <p class="skill-label">Linux</p>
+                                    <i class="devicon-linux-plain skill"></i>
+                                </section>
+                                <section class="skill-description">
+                                    <p>Even Microsoft uses it</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <!-- HTML/CSS -->
+                    <section class="col-4">
+                        <section class="skill-card">
+                            <section class="skill-card-inner">
+                                <section class="skill-header">
+                                    <p class="skill-label">HTML/CSS</p>
+                                    <i class="devicon-html5-plain skill"></i>
+                                </section>
+                                <section class="skill-description">
+                                    <p>Webpage structuring and styling</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <!-- JQuery -->
+                    <section class="col-4">
+                        <section class="skill-card">
+                            <section class="skill-card-inner">
+                                <section class="skill-header">
+                                    <p class="skill-label">JQuery</p>
+                                    <i class="devicon-jquery-plain skill"></i>
+                                </section>
+                                <section class="skill-description">
+                                    <p>Webpage animations</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- End Skills Section -->
         <!-- Work/Projects heading -->
-        <div class="row" id="Projects">
+        <section class="row" id="Projects">
             <div class="col-12">
                 <h2>Projects</h2>
             </div>
-        </div>
+        </section>
         <!-- Work/Projects content -->
-        <div class="row">
+        <section class="row">
             <!-- Autodex -->
-            <div class="col-4">
+            <section class="col-4">
                 <div class="project-card">
                     <div class="project-card-inner">
                         <div class="project-card-front">
-                            <img src="autodex_logo.png" alt="Project Image" style="width:100%; margin-top:25%;">
+                            <img src="autodex_logo.png" alt="Autodex Logo" style="width:100%; margin-top:25%;">
                             <div class="project-info">
                                 <h3><b>Autodex</b></h3>
-                                <i class="fa-brands fa-python language-icon"></i>
+                                <i class="devicon-python-plain language-icon"></i>
                             </div>
                         </div>
                         <div class="project-card-back">
@@ -115,17 +272,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- End Autodex -->
             <!-- UML Class Editor -->
-            <div class="col-4">
+            <section class="col-4">
                 <div class="project-card">
                     <div class="project-card-inner">
                         <div class="project-card-front">
-                            <img src="UMLImage.png" alt="Project Image" style="width:100%;">
+                            <img src="UMLImage.png" alt="UML Class Editor CLI" style="width:100%;">
                             <div class="project-info">
                                 <h3><b>UML Class Editor</b></h3>
-                                <i class="fa-brands fa-python language-icon"></i>
+                                <i class="devicon-python-plain language-icon"></i>
                             </div>
                         </div>
                         <div class="project-card-back">
@@ -136,22 +293,22 @@
                                 <li>Collaborated with a team of five to develop a UML Class Editor over a single semester, utilizing Agile methodologies and tools to ensure timely completion and high-quality results.</li>
                                 <li>Designed and implemented with a user-friendly GUI and powerful CLI, providing users with flexibility and convenience.</li>
                                 <li>Implemented the MVC design pattern, improving scalability and maintainability by separating the data, logic, and presentation layers.</li>
-                                <!-- <li>Implemented the memento design pattern to enable users to undo and redo actions, improving the program's usability and user experience.</li> -->
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- End UML Class Editor -->
             <!-- Arch Tower Defense -->
-            <div class="col-4">
+            <section class="col-4">
                 <div class="project-card">
                     <div class="project-card-inner">
                         <div class="project-card-front">
-                            <img src="https://seeklogo.com/images/A/archlinux-logo-1159446C2C-seeklogo.com.png" alt="Project Image" style="width:100%;">
+                            <img src="https://seeklogo.com/images/A/archlinux-logo-1159446C2C-seeklogo.com.png" alt="Arch Linux Logo" style="width:100%;">
                             <div class="project-info">
                                 <h3><b>Arch Tower Defense</b></h3>
-                                <i class="fa-brands fa-unity language-icon"></i>
+                                <i class="devicon-unity-original language-icon"></i>
+                                <i class="devicon-csharp-plain language-icon"></i>
                             </div>
                         </div>
                         <div class="project-card-back">
@@ -165,19 +322,19 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- End Arch Tower Defense -->
-        </div>
+        </section>
         <!-- End Project Section -->
 
         <!-- Contact Heading -->
-        <div id="Contact" class="row">
+        <section id="Contact" class="row">
             <div class="col-12">
                 <h2>Contact</h2>
             </div>
-        </div>
+        </section>
         <!-- Contact content -->
-        <div class="row">
+        <section class="row">
             <!-- spacer -->
             <div class="col-3"></div>
             <!-- Contact Form -->
@@ -193,7 +350,7 @@
             </div>
             <!-- spacer -->
             <div class="col-3"></div>
-        </div>
+        </section>
         <!-- End Contact Section -->
     </body>
 </html>
