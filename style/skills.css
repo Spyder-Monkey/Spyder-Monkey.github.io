@@ -4,7 +4,7 @@
 }
 
 .skill-card {
-    height: 200px;
+    /* height: 200px; */
 }
 
 .skill-card-inner {
@@ -17,7 +17,30 @@
     flex-direction: column;
 }
 
+.skill-header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.skill-label {
+    position: relative;
+    float: left;
+    color: #ccc;
+    font-size: 36px;
+    margin: 0;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+}
+
 .skill {
+    position: relative;
+    float: right;
     font-size: 72px;
     color: #fdd439;
+}
+
+.skill-description p {
+    color: #ccc;
 }
