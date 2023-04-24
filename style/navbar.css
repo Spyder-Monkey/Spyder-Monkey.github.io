@@ -201,16 +201,16 @@ nav a.nav-link::before {
     text-decoration: underline;
 }
 
-.overlay a:nth-child(1):hover {
-    color: #999;
-}
-
 .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
     color: #ccc;
+}
+
+.closebtn:hover {
+    color: #999;
 }
 
 .overlay-content {
