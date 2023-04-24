@@ -5,3 +5,18 @@ footer {
 footer section {
     text-align: center;
 }
+
+footer a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    color: #999;
+}
+
+footer i {
+    font-size: 24px;
+    margin: 2px;
+}
