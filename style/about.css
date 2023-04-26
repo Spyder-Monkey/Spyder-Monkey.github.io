@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+#About {
+    height: 100vh;
+}
+
 #About p {
     color: #ccc;
     font-size: 36px;

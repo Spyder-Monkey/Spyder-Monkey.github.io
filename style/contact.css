@@ -1,3 +1,8 @@
+#Contact {
+    height: 100vh;
+    background: #2c2c2c;
+}
+
 .contact-form {
     position: relative;
     display: flex;

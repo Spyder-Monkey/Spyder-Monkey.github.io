@@ -10,6 +10,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/58ffad5e40.js" crossorigin="anonymous"></script>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
           
@@ -25,6 +27,7 @@
         <link rel="stylesheet" href="style/footer.css">
         <!-- SCRIPTS -->
         <script src="scripts/navScript.js"></script>
+        <script src="scripts/scrollScript.js"></script>
     </head>
 
     <body>
@@ -47,10 +50,10 @@
         <div class="navbar">
             <div class="nav-container">
                 <nav role="navigation" class="nav-wrapper">
-                    <a href="#About" class="nav-link mobile">About</a>
-                    <a href="#Skills" class="nav-link mobile">Skills</a>
-                    <a href="#Projects" class="nav-link mobile">Projects</a>
-                    <a href="#Contact" class="nav-link mobile">Contact</a>
+                    <a href="#About" id="about-link" class="nav-link mobile">About</a>
+                    <a href="#Skills" id="skills-link" class="nav-link mobile">Skills</a>
+                    <a href="#Projects" id="projects-link" class="nav-link mobile">Projects</a>
+                    <a href="#Contact" id="contact-link" class="nav-link mobile">Contact</a>
                     <a href="Trevor_Resume.pdf" id="Resume" class="nav-link mobile" target="_blank" download>Resume</a>
                     <!-- Social Media Icons -->
                     <div class="social-icons">
@@ -73,6 +76,7 @@
         <!-- End Navbar section -->
 
         <!-- About -->
+        <a name="about"/>
         <section class="row" id="About">
             <section id="heading" class="col-6">
                 <div class="row">
@@ -97,143 +101,146 @@
         <!-- End About Section -->
 
         <!-- Skills Heading -->
-        <section class="row" id="Skills">
-            <section class="col-12">
-                <h2>Skills</h2>
+        <section id="Skills">
+            <a name="skills"/>
+            <section class="row">
+                <section class="col-12">
+                    <h2>Skills</h2>
+                </section>
             </section>
-        </section>
-        <!-- Skills Content -->
-        <section class="row">
-            <section class="col-12">
-                <section class="row skill-row">
-                    <!-- Python -->
-                    <section class="col-4">
-                        <section class="skill-card">
-                            <section class="skill-card-inner">
-                                <section class="skill-header">
-                                    <p class="skill-label">Python</p>
-                                    <i class="devicon-python-plain skill"></i>
+            <!-- Skills Content -->
+            <section class="row" id="skill-content">
+                <section class="col-12" style="padding:0;">
+                    <section class="row skill-row">
+                        <!-- Python -->
+                        <section class="col-4" style="padding-top:0;">
+                            <section class="skill-card">
+                                <section class="skill-card-inner">
+                                    <section class="skill-header">
+                                        <p class="skill-label">Python</p>
+                                        <i class="devicon-python-plain skill"></i>
+                                    </section>
+                                    <section class="skill-description">
+                                        <p>Data analysis, Web scraping, Automation</p>
+                                    </section>
                                 </section>
-                                <section class="skill-description">
-                                    <p>Data analysis, Web scraping, Automation</p>
+                            </section>
+                        </section>
+                        <!-- Java -->
+                        <section class="col-4">
+                            <section class="skill-card">
+                                <section class="skill-card-inner">
+                                    <section class="skill-header">
+                                        <p class="skill-label">Java</p>
+                                        <i class="devicon-java-plain skill"></i>
+                                    </section>
+                                    <section class="skill-description">
+                                        <p>Object oriented programming</p>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                        <!-- PSQL -->
+                        <section class="col-4">
+                            <section class="skill-card">
+                                <section class="skill-card-inner">
+                                    <section class="skill-header">
+                                        <p class="skill-label">PostgreSQL</p>
+                                        <i class="devicon-postgresql-plain skill"></i>
+                                    </section>
+                                    <section class="skill-description">
+                                        <p>Storage of relational data</p>
+                                    </section>
                                 </section>
                             </section>
                         </section>
                     </section>
-                    <!-- Java -->
-                    <section class="col-4">
-                        <section class="skill-card">
-                            <section class="skill-card-inner">
-                                <section class="skill-header">
-                                    <p class="skill-label">Java</p>
-                                    <i class="devicon-java-plain skill"></i>
+    
+                    <section class="row skill-row">
+                        <!-- GIT -->
+                        <section class="col-4">
+                            <section class="skill-card">
+                                <section class="skill-card-inner">
+                                    <section class="skill-header">
+                                        <p class="skill-label">Git</p>
+                                        <i class="devicon-git-plain skill"></i>
+                                    </section>
+                                    <section class="skill-description">
+                                        <p>Version control, collaboration, branch workflow</p>
+                                    </section>
                                 </section>
-                                <section class="skill-description">
-                                    <p>Object oriented programming</p>
+                            </section>
+                        </section>
+                        <!-- C/C++ -->
+                        <section class="col-4">
+                            <section class="skill-card">
+                                <section class="skill-card-inner">
+                                    <section class="skill-header">
+                                        <p class="skill-label">C++</p>
+                                        <i class="devicon-cplusplus-plain skill"></i>
+                                    </section>
+                                    <section class="skill-description">
+                                        <p>Operating system manipulation</p>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                        <!-- JavaScript -->
+                        <section class="col-4">
+                            <section class="skill-card">
+                                <section class="skill-card-inner">
+                                    <section class="skill-header">
+                                        <p class="skill-label">JavaScript</p>
+                                        <i class="devicon-javascript-plain skill"></i>
+                                    </section>
+                                    <section class="skill-description">
+                                        <p>Creating dynamic webpages</p>
+                                    </section>
                                 </section>
                             </section>
                         </section>
                     </section>
-                    <!-- PSQL -->
-                    <section class="col-4">
-                        <section class="skill-card">
-                            <section class="skill-card-inner">
-                                <section class="skill-header">
-                                    <p class="skill-label">PostgreSQL</p>
-                                    <i class="devicon-postgresql-plain skill"></i>
-                                </section>
-                                <section class="skill-description">
-                                    <p>Storage of relational data</p>
-                                </section>
-                            </section>
-                        </section>
-                    </section>
-                </section>
-
-                <section class="row skill-row">
-                    <!-- GIT -->
-                    <section class="col-4">
-                        <section class="skill-card">
-                            <section class="skill-card-inner">
-                                <section class="skill-header">
-                                    <p class="skill-label">Git</p>
-                                    <i class="devicon-git-plain skill"></i>
-                                </section>
-                                <section class="skill-description">
-                                    <p>Version control, collaboration, branch workflow</p>
+    
+                    <section class="row skill-row">
+                        <!-- Linux -->
+                        <section class="col-4">
+                            <section class="skill-card">
+                                <section class="skill-card-inner">
+                                    <section class="skill-header">
+                                        <p class="skill-label">Linux</p>
+                                        <i class="devicon-linux-plain skill"></i>
+                                    </section>
+                                    <section class="skill-description">
+                                        <p>Even Microsoft uses it</p>
+                                    </section>
                                 </section>
                             </section>
                         </section>
-                    </section>
-                    <!-- C/C++ -->
-                    <section class="col-4">
-                        <section class="skill-card">
-                            <section class="skill-card-inner">
-                                <section class="skill-header">
-                                    <p class="skill-label">C++</p>
-                                    <i class="devicon-cplusplus-plain skill"></i>
-                                </section>
-                                <section class="skill-description">
-                                    <p>Operating system manipulation</p>
-                                </section>
-                            </section>
-                        </section>
-                    </section>
-                    <!-- JavaScript -->
-                    <section class="col-4">
-                        <section class="skill-card">
-                            <section class="skill-card-inner">
-                                <section class="skill-header">
-                                    <p class="skill-label">JavaScript</p>
-                                    <i class="devicon-javascript-plain skill"></i>
-                                </section>
-                                <section class="skill-description">
-                                    <p>Creating dynamic webpages</p>
+                        <!-- HTML/CSS -->
+                        <section class="col-4">
+                            <section class="skill-card">
+                                <section class="skill-card-inner">
+                                    <section class="skill-header">
+                                        <p class="skill-label">HTML/CSS</p>
+                                        <i class="devicon-html5-plain skill"></i>
+                                    </section>
+                                    <section class="skill-description">
+                                        <p>Webpage structuring and styling</p>
+                                    </section>
                                 </section>
                             </section>
                         </section>
-                    </section>
-                </section>
-
-                <section class="row skill-row">
-                    <!-- Linux -->
-                    <section class="col-4">
-                        <section class="skill-card">
-                            <section class="skill-card-inner">
-                                <section class="skill-header">
-                                    <p class="skill-label">Linux</p>
-                                    <i class="devicon-linux-plain skill"></i>
-                                </section>
-                                <section class="skill-description">
-                                    <p>Even Microsoft uses it</p>
-                                </section>
-                            </section>
-                        </section>
-                    </section>
-                    <!-- HTML/CSS -->
-                    <section class="col-4">
-                        <section class="skill-card">
-                            <section class="skill-card-inner">
-                                <section class="skill-header">
-                                    <p class="skill-label">HTML/CSS</p>
-                                    <i class="devicon-html5-plain skill"></i>
-                                </section>
-                                <section class="skill-description">
-                                    <p>Webpage structuring and styling</p>
-                                </section>
-                            </section>
-                        </section>
-                    </section>
-                    <!-- JQuery -->
-                    <section class="col-4">
-                        <section class="skill-card">
-                            <section class="skill-card-inner">
-                                <section class="skill-header">
-                                    <p class="skill-label">JQuery</p>
-                                    <i class="devicon-jquery-plain skill"></i>
-                                </section>
-                                <section class="skill-description">
-                                    <p>Webpage animations</p>
+                        <!-- JQuery -->
+                        <section class="col-4">
+                            <section class="skill-card">
+                                <section class="skill-card-inner">
+                                    <section class="skill-header">
+                                        <p class="skill-label">JQuery</p>
+                                        <i class="devicon-jquery-plain skill"></i>
+                                    </section>
+                                    <section class="skill-description">
+                                        <p>Webpage animations</p>
+                                    </section>
                                 </section>
                             </section>
                         </section>
@@ -243,114 +250,120 @@
         </section>
         <!-- End Skills Section -->
         <!-- Work/Projects heading -->
-        <section class="row" id="Projects">
-            <div class="col-12">
-                <h2>Projects</h2>
-            </div>
-        </section>
-        <!-- Work/Projects content -->
-        <section class="row">
-            <!-- Autodex -->
-            <section class="col-4">
-                <div class="project-card">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <img src="autodex_logo.png" alt="Autodex Logo" style="width:100%; margin-top:25%;">
-                            <div class="project-info">
-                                <h3><b>Autodex</b></h3>
-                                <i class="devicon-python-plain language-icon"></i>
-                            </div>
-                        </div>
-                        <div class="project-card-back">
-                            <h1>Autodex</h1>
-                            <a href="https://github.com/Spyder-Monkey/Autodex" class="project-link" target="_blank">GitHub Repository</a>
-                            <!-- Project Description -->
-                            <ul>
-                                <li>Integrated the National Highway Traffic Safety Administration's API to extract vehicle data, resulting in a streamlined and efficient data retrieval process.</li>
-                                <li>Developed a solution to extract vehicle information without incurring any costs, demonstrating a strong commitment to data accessibility and proficiency in navigating technical barriers.</li>
-                                <li>Implemented a VIN-based tracking system for vehicles, providing a reliable and accurate way to monitor and manage vehicle data.</li>
-                            </ul>
-                        </div>
-                    </div>
+        <section id="Projects">
+            <a name="projects"/>
+            <section class="row">
+                <div class="col-12">
+                    <h2>Projects</h2>
                 </div>
             </section>
-            <!-- End Autodex -->
-            <!-- UML Class Editor -->
-            <section class="col-4">
-                <div class="project-card">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <img src="UMLImage.png" alt="UML Class Editor CLI" style="width:100%;">
-                            <div class="project-info">
-                                <h3><b>UML Class Editor</b></h3>
-                                <i class="devicon-python-plain language-icon"></i>
+            <!-- Work/Projects content -->
+            <section class="row" id="project-content">
+                <!-- Autodex -->
+                <section class="col-4">
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <img src="autodex_logo.png" alt="Autodex Logo" style="width:100%; margin-top:25%;">
+                                <div class="project-info">
+                                    <h3><b>Autodex</b></h3>
+                                    <i class="devicon-python-plain language-icon"></i>
+                                </div>
+                            </div>
+                            <div class="project-card-back">
+                                <h1>Autodex</h1>
+                                <a href="https://github.com/Spyder-Monkey/Autodex" class="project-link" target="_blank">GitHub Repository</a>
+                                <!-- Project Description -->
+                                <ul>
+                                    <li>Integrated the National Highway Traffic Safety Administration's API to extract vehicle data, resulting in a streamlined and efficient data retrieval process.</li>
+                                    <li>Developed a solution to extract vehicle information without incurring any costs, demonstrating a strong commitment to data accessibility and proficiency in navigating technical barriers.</li>
+                                    <li>Implemented a VIN-based tracking system for vehicles, providing a reliable and accurate way to monitor and manage vehicle data.</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="project-card-back">
-                            <h1>UML Class Editor</h1>
-                            <a href="https://github.com/mucsci-students/2022fa-420-LigmaPy" target="_blank" class="project-link">GitHub Repository</a>
-                            <!-- Project Description -->
-                            <ul>
-                                <li>Collaborated with a team of five to develop a UML Class Editor over a single semester, utilizing Agile methodologies and tools to ensure timely completion and high-quality results.</li>
-                                <li>Designed and implemented with a user-friendly GUI and powerful CLI, providing users with flexibility and convenience.</li>
-                                <li>Implemented the MVC design pattern, improving scalability and maintainability by separating the data, logic, and presentation layers.</li>
-                            </ul>
-                        </div>
                     </div>
-                </div>
-            </section>
-            <!-- End UML Class Editor -->
-            <!-- Arch Tower Defense -->
-            <section class="col-4">
-                <div class="project-card">
-                    <div class="project-card-inner">
-                        <div class="project-card-front">
-                            <img src="https://seeklogo.com/images/A/archlinux-logo-1159446C2C-seeklogo.com.png" alt="Arch Linux Logo" style="width:100%;">
-                            <div class="project-info">
-                                <h3><b>Arch Tower Defense</b></h3>
-                                <i class="devicon-unity-original language-icon"></i>
-                                <i class="devicon-csharp-plain language-icon"></i>
+                </section>
+                <!-- End Autodex -->
+                <!-- UML Class Editor -->
+                <section class="col-4">
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <img src="UMLImage.png" alt="UML Class Editor CLI" style="width:100%;">
+                                <div class="project-info">
+                                    <h3><b>UML Class Editor</b></h3>
+                                    <i class="devicon-python-plain language-icon"></i>
+                                </div>
+                            </div>
+                            <div class="project-card-back">
+                                <h1>UML Class Editor</h1>
+                                <a href="https://github.com/mucsci-students/2022fa-420-LigmaPy" target="_blank" class="project-link">GitHub Repository</a>
+                                <!-- Project Description -->
+                                <ul>
+                                    <li>Collaborated with a team of five to develop a UML Class Editor over a single semester, utilizing Agile methodologies and tools to ensure timely completion and high-quality results.</li>
+                                    <li>Designed and implemented with a user-friendly GUI and powerful CLI, providing users with flexibility and convenience.</li>
+                                    <li>Implemented the MVC design pattern, improving scalability and maintainability by separating the data, logic, and presentation layers.</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="project-card-back">
-                            <h1>Arch Tower Defense</h1>
-                            <a href="https://github.com/mucsci-students/2022fa-475-ArchTowerDefense" class="project-link" target="_blank">GitHub Repository</a>
-                            <ul>
-                                <li>Merges the concepts of tower defense and FPS, resulting in an innovative gameplay experience that caters to a diverse audience.</li>
-                                <li>Developed in a team of three within a tight three-week deadline, showcasing strong teamwork and time management skills.</li>
-                                <li>Utilized a multitude of algorithms for different characters, resulting in a rich and diverse gameplay experience.</li>
-                            </ul>
+                    </div>
+                </section>
+                <!-- End UML Class Editor -->
+                <!-- Arch Tower Defense -->
+                <section class="col-4">
+                    <div class="project-card">
+                        <div class="project-card-inner">
+                            <div class="project-card-front">
+                                <img src="https://seeklogo.com/images/A/archlinux-logo-1159446C2C-seeklogo.com.png" alt="Arch Linux Logo" style="width:100%;">
+                                <div class="project-info">
+                                    <h3><b>Arch Tower Defense</b></h3>
+                                    <i class="devicon-unity-original language-icon"></i>
+                                    <i class="devicon-csharp-plain language-icon"></i>
+                                </div>
+                            </div>
+                            <div class="project-card-back">
+                                <h1>Arch Tower Defense</h1>
+                                <a href="https://github.com/mucsci-students/2022fa-475-ArchTowerDefense" class="project-link" target="_blank">GitHub Repository</a>
+                                <ul>
+                                    <li>Merges the concepts of tower defense and FPS, resulting in an innovative gameplay experience that caters to a diverse audience.</li>
+                                    <li>Developed in a team of three within a tight three-week deadline, showcasing strong teamwork and time management skills.</li>
+                                    <li>Utilized a multitude of algorithms for different characters, resulting in a rich and diverse gameplay experience.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
+                <!-- End Arch Tower Defense -->
             </section>
-            <!-- End Arch Tower Defense -->
         </section>
         <!-- End Project Section -->
 
         <!-- Contact Heading -->
-        <section id="Contact" class="row">
-            <div class="col-12">
-                <h2>Contact</h2>
-            </div>
-        </section>
-        <!-- Contact content -->
-        <section class="row">
-            <!-- spacer -->
-            <div class="col-3"></div>
-            <!-- Contact Form -->
-            <div class="col-6">
-                <form action="https://forms.un-static.com/forms/dd0788a6695ab7fda709d4db1fea2a7110e80717" method="post" id="contact-form-id" name="contact-form">
-                    <input type="text" id="name" name="name" placeholder="Name" required>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-
-                    <textarea name="message" id="subject" placeholder="Your message" style="height:150px;"></textarea>
-
-                    <input type="submit" name="contact-submit" value="Submit">
-                </form>
-            </div>
-            <!-- spacer -->
-            <div class="col-3"></div>
+        <section id="Contact">
+            <a name="contact"/>
+            <section class="row">
+                <div class="col-12">
+                    <h2>Contact</h2>
+                </div>
+            </section>
+            <!-- Contact content -->
+            <section class="row">
+                <!-- spacer -->
+                <div class="col-3"></div>
+                <!-- Contact Form -->
+                <div class="col-6">
+                    <form action="https://forms.un-static.com/forms/dd0788a6695ab7fda709d4db1fea2a7110e80717" method="post" id="contact-form-id" name="contact-form">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+    
+                        <textarea name="message" id="subject" placeholder="Your message" style="height:150px;"></textarea>
+    
+                        <input type="submit" name="contact-submit" value="Submit">
+                    </form>
+                </div>
+                <!-- spacer -->
+                <div class="col-3"></div>
+            </section>
         </section>
         <!-- End Contact Section -->
 
