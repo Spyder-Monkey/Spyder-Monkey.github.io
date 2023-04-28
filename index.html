@@ -12,7 +12,7 @@
         <script src="https://kit.fontawesome.com/58ffad5e40.js" crossorigin="anonymous"></script>
         <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-
+        <!-- DevIcon -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
           
 
@@ -35,7 +35,7 @@
         <div class="hamburger">
             <span style="font-size:30px;cursor:pointer;color:#ccc;" onclick="openNav()">&#9776;</span>
         </div>
-
+        <!-- Mobile Nav -->
         <div id="mobileNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
@@ -46,7 +46,7 @@
                 <a href="Trevor_Resume.pdf" target="_blank" download>Resume</a>
             </div>
         </div>
-
+        <!-- Sidebar Nav -->
         <div class="navbar">
             <div class="nav-container">
                 <nav role="navigation" class="nav-wrapper">
@@ -66,7 +66,7 @@
                             <i class="devicon-linkedin-plain"></i>
                         </a>
                         <!-- Email -->
-                        <a href="#Contact">
+                        <a id="email-icon-link" href="#Contact">
                             <i class="fa-solid fa-envelope"></i>
                         </a>
                     </div>
@@ -76,25 +76,39 @@
         <!-- End Navbar section -->
 
         <!-- About -->
-        <a name="about"/>
-        <section class="row" id="About">
-            <section id="heading" class="col-6">
-                <div class="row">
-                    <div class="col-5">
-                        <p style="text-align:left;">The name's</p>
+        <section id="About">
+            <a name="about"/>
+            <section class="row">
+                <section id="heading" class="col-6">
+                    <div class="row">
+                        <div class="col-5">
+                            <p style="text-align:left;">The name's</p>
+                        </div>
+                        <div class="col-7"></div>
                     </div>
-                    <div class="col-7"></div>
+                    <div clas="row">
+                        <div class="col-12">
+                            <h2 id="my-name">Trevor Bender</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5"></div>
+                        <div class="col-7">
+                            <p id="title">Software Developer</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!-- Images -->
+            <section class="row" id="images">
+                <div class="col-4">
+                    <img src="images/pacise2023_2.jpg" alt="PACISE 2023">
                 </div>
-                <div clas="row">
-                    <div class="col-12">
-                        <h2 id="my-name">Trevor Bender</h2>
-                    </div>
+                <div class="col-4">
+                    <img src="images/CCSCE.jpg" alt="CCSCE 2022">
                 </div>
-                <div class="row">
-                    <div class="col-5"></div>
-                    <div class="col-7">
-                        <p id="title">Software Developer</p>
-                    </div>
+                <div class="col-4">
+                    <img src="images/ICPC.jpg" alt="ICPC">
                 </div>
             </section>
         </section>
@@ -264,7 +278,7 @@
                     <div class="project-card">
                         <div class="project-card-inner">
                             <div class="project-card-front">
-                                <img src="autodex_logo.png" alt="Autodex Logo" style="width:100%; margin-top:25%;">
+                                <img src="images/autodex_logo.png" alt="Autodex Logo" style="width:100%; margin-top:25%;">
                                 <div class="project-info">
                                     <h3><b>Autodex</b></h3>
                                     <i class="devicon-python-plain language-icon"></i>
@@ -289,7 +303,7 @@
                     <div class="project-card">
                         <div class="project-card-inner">
                             <div class="project-card-front">
-                                <img src="UMLImage.png" alt="UML Class Editor CLI" style="width:100%;">
+                                <img src="images/UMLImage.png" alt="UML Class Editor CLI" style="width:100%;">
                                 <div class="project-info">
                                     <h3><b>UML Class Editor</b></h3>
                                     <i class="devicon-python-plain language-icon"></i>
