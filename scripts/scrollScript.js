@@ -19,4 +19,8 @@ $(document).ready(function(){
     $("#contact-link").click(function() {
         scrollToAnchor('contact');
     });
+
+    $("#email-icon-link").click(function() {
+        scrollToAnchor('contact');
+    });
 });

@@ -9,11 +9,17 @@
 
 #About {
     height: 100vh;
+    background: #2c2c2c;
 }
 
 #About p {
     color: #ccc;
     font-size: 36px;
+}
+
+#images img {
+    width: 100%;
+    aspect-ratio: 1.5 / 1;
 }
 
 #title {
@@ -24,7 +30,6 @@
 
 #profile-image {
     height: 300px;
-    background: green;
 }
 
 #heading .row {
